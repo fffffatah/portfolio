@@ -1,7 +1,7 @@
 import SetPageTitle from "../../setPageTitle";
-import { Carousel } from "react-bootstrap";
-import ProfileImage from "../../storage/mystory/ProfileImage.png";
-import { Image } from "react-bootstrap";
+// import { Carousel } from "react-bootstrap";
+// import ProfileImage from "../../storage/mystory/ProfileImage.png";
+// import { Image } from "react-bootstrap";
 
 export default function MyStory(){
     SetPageTitle("My Story | A.F.M. Noorullah");
