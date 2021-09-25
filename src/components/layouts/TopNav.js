@@ -8,7 +8,9 @@ import Education from "../education/Education";
 import Skills from "../skills/Skills";
 import Experience from "../experience/Experience";
 import Projects from "../projects/Projects";
-
+import ProfileImage from "../../storage/mystory/ProfileImage.png"
+import Resume from "../../storage/downloads/RESUME.pdf";
+import { Image } from "react-bootstrap";
 
 export default function TopNav(){
     return(
@@ -16,7 +18,7 @@ export default function TopNav(){
         <div>
             <Navbar collapseOnSelect="true" expand="lg" bg="light" variant="light">
                 <Container>
-                    <Navbar.Brand href="/">Navbar</Navbar.Brand>
+                    <Navbar.Brand href="/"><Image src={ProfileImage} height="120px" width="120px"/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav variant="tabs" defaultActiveKey="/education" className="me-auto">
@@ -40,7 +42,7 @@ export default function TopNav(){
                     <Navbar.Collapse className="justify-content-end">
                         <NavItem>
                             <NavDropdown title="Downloads" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#">Resume</NavDropdown.Item>
+                                <NavDropdown.Item href={Resume} download>Resume</NavDropdown.Item>
                             </NavDropdown>
                         </NavItem>
                     </Navbar.Collapse>
