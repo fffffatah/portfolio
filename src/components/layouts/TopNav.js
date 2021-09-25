@@ -5,6 +5,10 @@ import { NavDropdown } from "react-bootstrap";
 import { Link, BrowserRouter, Switch, Route } from "react-router-dom";
 import MyStory from "../story/MyStory";
 import Education from "../education/Education";
+import Skills from "../skills/Skills";
+import Experience from "../experience/Experience";
+import Projects from "../projects/Projects";
+
 
 export default function TopNav(){
     return(
@@ -12,24 +16,24 @@ export default function TopNav(){
         <div>
             <Navbar collapseOnSelect="true" expand="lg" bg="light" variant="light">
                 <Container>
-                    <Navbar.Brand href="#">Navbar</Navbar.Brand>
+                    <Navbar.Brand href="/">Navbar</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav variant="tabs" defaultActiveKey="/education" className="me-auto">
                             <NavItem>
-                                <Nav.Link eventKey="link-1" as={Link} to="/">MyStory</Nav.Link>
+                                <Nav.Link eventKey="link-1" as={Link} to="/">My Story</Nav.Link>
                             </NavItem>
                             <NavItem>
                                 <Nav.Link eventKey="link-2" as={Link} to="/education">Education</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link eventKey="link-3" href="/">Skills</Nav.Link>
+                                <Nav.Link eventKey="link-3" as={Link} to="/skills">Skills</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link eventKey="link-4" href="/">Projects</Nav.Link>
+                                <Nav.Link eventKey="link-4" as={Link} to="/projects">Projects</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link eventKey="link-5" href="/">Experience</Nav.Link>
+                                <Nav.Link eventKey="link-5" as={Link} to="/experience">Experience</Nav.Link>
                             </NavItem>
                         </Nav>
                     </Navbar.Collapse>
@@ -52,6 +56,21 @@ export default function TopNav(){
                     exact
                     path="/education"
                     component={Education}
+                />
+                <Route
+                    exact
+                    path="/experience"
+                    component={Experience}
+                />
+                <Route
+                    exact
+                    path="/projects"
+                    component={Projects}
+                />
+                <Route
+                    exact
+                    path="/skills"
+                    component={Skills}
                 />
             </Switch>
         </div>

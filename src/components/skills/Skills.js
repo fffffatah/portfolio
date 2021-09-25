@@ -1,4 +1,7 @@
+import SetPageTitle from "../../setPageTitle";
+
 export default function Skills(){
+    SetPageTitle("Skills | A.F.M. Noorullah");
     return(
         <div>
             <center>
