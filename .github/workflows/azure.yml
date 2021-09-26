@@ -19,6 +19,7 @@ on:
   push:
     branches:
      -master
+  workflow_dispatch:
 
 env:
   AZURE_WEBAPP_NAME: fffffatah    # set this to your application's name
