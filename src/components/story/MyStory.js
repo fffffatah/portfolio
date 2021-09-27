@@ -1,49 +1,28 @@
 import SetPageTitle from "../../setPageTitle";
-// import { Carousel } from "react-bootstrap";
-// import ProfileImage from "../../storage/mystory/ProfileImage.png";
-// import { Image } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
+import { Image } from "react-bootstrap";
+import Stories from "../../storage/mystory/data.json";
+import IntroImage from "../../storage/mystory/Intro.png";
 
 export default function MyStory(){
     SetPageTitle("My Story | A.F.M. Noorullah");
     return(
         <div>
-            {/* <Carousel variant="dark">
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={ProfileImage}
-                    alt="Second slide"
-                    width="300px"
-                    height="300px"
-                    />
-                    <Carousel.Caption>
-                    <h5>Hello World!</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Second slide&bg=eee"
-                    alt="Second slide"
-                    />
-                    <Carousel.Caption>
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=e5e5e5"
-                    alt="Third slide"
-                    />
-                    <Carousel.Caption>
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel> */}
+            <Container>
+                <Row xs={1} md={2}>
+                    <Col><Image src={IntroImage} height="500px" width="600px" fluid/></Col>
+                    <Col>
+                        <div style={{'font-family':'Segoe UI'},{'color':'#3B8CF5'}}>
+                            <h1 style={{'padding-top':'50px'}}><b>{Stories.stories[0].title}</b></h1>
+                        </div>
+                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
+                            <p style={{'padding-top':'5px'}}><b>{Stories.stories[0].story}</b></p>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }
