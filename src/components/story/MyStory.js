@@ -21,6 +21,24 @@ export default function MyStory(){
                             <p style={{'padding-top':'5px'}}><b>{Stories.stories[0].story}</b></p>
                         </div>
                     </Col>
+                    <Col><Image src={IntroImage} height="500px" width="600px" fluid/></Col>
+                    <Col>
+                        <div style={{'font-family':'Segoe UI'},{'color':'#3B8CF5'}}>
+                            <h1 style={{'padding-top':'50px'}}><b>{Stories.stories[1].title}</b></h1>
+                        </div>
+                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
+                            <p style={{'padding-top':'5px'}}><b>{Stories.stories[1].story}</b></p>
+                        </div>
+                    </Col>
+                    <Col><Image src={IntroImage} height="500px" width="600px" fluid/></Col>
+                    <Col>
+                        <div style={{'font-family':'Segoe UI'},{'color':'#3B8CF5'}}>
+                            <h1 style={{'padding-top':'50px'}}><b>{Stories.stories[2].title}</b></h1>
+                        </div>
+                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
+                            <p style={{'padding-top':'5px'}}><b>{Stories.stories[2].story}</b></p>
+                        </div>
+                    </Col>
                 </Row>
             </Container>
         </div>

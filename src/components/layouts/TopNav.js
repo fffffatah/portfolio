@@ -8,6 +8,7 @@ import Education from "../education/Education";
 import Skills from "../skills/Skills";
 import Experience from "../experience/Experience";
 import Projects from "../projects/Projects";
+import Reference from "../reference/Reference";
 import ProfileImage from "../../storage/mystory/ProfileImage.png"
 import Resume from "../../storage/downloads/RESUME.pdf";
 import { Image } from "react-bootstrap";
@@ -21,7 +22,7 @@ export default function TopNav(){
                     <Navbar.Brand href="/"><Image src={ProfileImage} height="120px" width="120px"/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav variant="tabs" defaultActiveKey="/education" className="me-auto">
+                        <Nav variant="tabs" defaultActiveKey="/" className="me-auto">
                             <NavItem>
                                 <Nav.Link eventKey="link-1" as={Link} to="/">My Story</Nav.Link>
                             </NavItem>
@@ -36,6 +37,9 @@ export default function TopNav(){
                             </NavItem>
                             <NavItem>
                                 <Nav.Link eventKey="link-5" as={Link} to="/experience">Experience</Nav.Link>
+                            </NavItem>
+                            <NavItem>
+                                <Nav.Link eventKey="link-6" as={Link} to="/reference">Reference</Nav.Link>
                             </NavItem>
                         </Nav>
                     </Navbar.Collapse>
@@ -73,6 +77,11 @@ export default function TopNav(){
                     exact
                     path="/skills"
                     component={Skills}
+                />
+                <Route
+                    exact
+                    path="/reference"
+                    component={Reference}
                 />
             </Switch>
         </div>
