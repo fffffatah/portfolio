@@ -36,10 +36,10 @@ export default function TopNav(){
                                 <Nav.Link eventKey="link-4" as={Link} to="/projects">Projects</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link eventKey="link-5" as={Link} to="/experience">Experience</Nav.Link>
+                                <Nav.Link eventKey="link-5" as={Link} to="/experience">Experience(s)</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link eventKey="link-6" as={Link} to="/reference">Reference</Nav.Link>
+                                <Nav.Link eventKey="link-6" as={Link} to="/reference">Reference(s)</Nav.Link>
                             </NavItem>
                         </Nav>
                     </Navbar.Collapse>
