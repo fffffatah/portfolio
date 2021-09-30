@@ -1,9 +1,10 @@
 import SetPageTitle from "../../setPageTitle";
-import { Container, Nav } from "react-bootstrap";
+import { Container, ListGroup, Nav } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { Collapse } from "react-bootstrap";
 import Educations from "../../storage/education/data.json";
 import { useState } from "react";
 import { Modal } from "react-bootstrap";
@@ -13,6 +14,8 @@ export default function Bachelor(){
     //MAIN MODAL
     const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
+    const [open, setOpen] = useState(false);
+
     function handleShow() {
         setShow(true);
     }
@@ -45,164 +48,50 @@ export default function Bachelor(){
             </Container>
             <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header closeButton>
-                <Modal.Title>Courses</Modal.Title>
+                <Modal.Title>
+                    Courses
+                </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                 <Container>
                     <Row xs={1} md={2}>
-                        <Col>
-                            <Card>
-                                <Card.Header as="h5">{Educations.education[0].semesters[0].session}</Card.Header>
-                                <Card.Body>
-                                    <Nav.Link href="https://www.aiub.edu" target="_blank">
-                                    <Card.Title>{Educations.education[0].institution}</Card.Title>
-                                    </Nav.Link>
-                                    <Card.Text style={{'padding-left':'15px'}}>
-                                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
-                                            {Educations.education[0].degree} ({Educations.education[0].year})<br/>
-                                            CGPA: {Educations.education[0].CGPA}<br/><br/>
-                                            {Educations.education[0].achievements[0].name}
-                                        </div>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <Card.Header as="h5">{Educations.education[0].semesters[1].session}</Card.Header>
-                                <Card.Body>
-                                    <Nav.Link href="https://www.aiub.edu" target="_blank">
-                                    <Card.Title>{Educations.education[0].institution}</Card.Title>
-                                    </Nav.Link>
-                                    <Card.Text style={{'padding-left':'15px'}}>
-                                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
-                                            {Educations.education[0].degree} ({Educations.education[0].year})<br/>
-                                            CGPA: {Educations.education[0].CGPA}<br/><br/>
-                                            {Educations.education[0].achievements[0].name}
-                                        </div>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <Card.Header as="h5">{Educations.education[0].semesters[2].session}</Card.Header>
-                                <Card.Body>
-                                    <Nav.Link href="https://www.aiub.edu" target="_blank">
-                                    <Card.Title>{Educations.education[0].institution}</Card.Title>
-                                    </Nav.Link>
-                                    <Card.Text style={{'padding-left':'15px'}}>
-                                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
-                                            {Educations.education[0].degree} ({Educations.education[0].year})<br/>
-                                            CGPA: {Educations.education[0].CGPA}<br/><br/>
-                                            {Educations.education[0].achievements[0].name}
-                                        </div>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <Card.Header as="h5">{Educations.education[0].semesters[3].session}</Card.Header>
-                                <Card.Body>
-                                    <Nav.Link href="https://www.aiub.edu" target="_blank">
-                                    <Card.Title>{Educations.education[0].institution}</Card.Title>
-                                    </Nav.Link>
-                                    <Card.Text style={{'padding-left':'15px'}}>
-                                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
-                                            {Educations.education[0].degree} ({Educations.education[0].year})<br/>
-                                            CGPA: {Educations.education[0].CGPA}<br/><br/>
-                                            {Educations.education[0].achievements[0].name}
-                                        </div>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <Card.Header as="h5">{Educations.education[0].semesters[4].session}</Card.Header>
-                                <Card.Body>
-                                    <Nav.Link href="https://www.aiub.edu" target="_blank">
-                                    <Card.Title>{Educations.education[0].institution}</Card.Title>
-                                    </Nav.Link>
-                                    <Card.Text style={{'padding-left':'15px'}}>
-                                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
-                                            {Educations.education[0].degree} ({Educations.education[0].year})<br/>
-                                            CGPA: {Educations.education[0].CGPA}<br/><br/>
-                                            {Educations.education[0].achievements[0].name}
-                                        </div>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <Card.Header as="h5">{Educations.education[0].semesters[5].session}</Card.Header>
-                                <Card.Body>
-                                    <Nav.Link href="https://www.aiub.edu" target="_blank">
-                                    <Card.Title>{Educations.education[0].institution}</Card.Title>
-                                    </Nav.Link>
-                                    <Card.Text style={{'padding-left':'15px'}}>
-                                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
-                                            {Educations.education[0].degree} ({Educations.education[0].year})<br/>
-                                            CGPA: {Educations.education[0].CGPA}<br/><br/>
-                                            {Educations.education[0].achievements[0].name}
-                                        </div>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <Card.Header as="h5">{Educations.education[0].semesters[6].session}</Card.Header>
-                                <Card.Body>
-                                    <Nav.Link href="https://www.aiub.edu" target="_blank">
-                                    <Card.Title>{Educations.education[0].institution}</Card.Title>
-                                    </Nav.Link>
-                                    <Card.Text style={{'padding-left':'15px'}}>
-                                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
-                                            {Educations.education[0].degree} ({Educations.education[0].year})<br/>
-                                            CGPA: {Educations.education[0].CGPA}<br/><br/>
-                                            {Educations.education[0].achievements[0].name}
-                                        </div>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <Card.Header as="h5">{Educations.education[0].semesters[7].session}</Card.Header>
-                                <Card.Body>
-                                    <Nav.Link href="https://www.aiub.edu" target="_blank">
-                                    <Card.Title>{Educations.education[0].institution}</Card.Title>
-                                    </Nav.Link>
-                                    <Card.Text style={{'padding-left':'15px'}}>
-                                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
-                                            {Educations.education[0].degree} ({Educations.education[0].year})<br/>
-                                            CGPA: {Educations.education[0].CGPA}<br/><br/>
-                                            {Educations.education[0].achievements[0].name}
-                                        </div>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <Card.Header as="h5">{Educations.education[0].semesters[8].session}</Card.Header>
-                                <Card.Body>
-                                    <Nav.Link href="https://www.aiub.edu" target="_blank">
-                                    <Card.Title>{Educations.education[0].institution}</Card.Title>
-                                    </Nav.Link>
-                                    <Card.Text style={{'padding-left':'15px'}}>
-                                        <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
-                                            {Educations.education[0].degree} ({Educations.education[0].year})<br/>
-                                            CGPA: {Educations.education[0].CGPA}<br/><br/>
-                                            {Educations.education[0].achievements[0].name}
-                                        </div>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
+                        {
+                            Educations.education[0].semesters.length?(
+                                Educations.education[0].semesters.map((semester)=>{
+                                    return(
+                                        <Col>
+                                            <Card>
+                                                <Card.Header as="h5">{semester.session}</Card.Header>
+                                                    <Card.Body>
+                                                        <ListGroup variant="flush">
+                                                        {
+                                                            semester.courses.length?(
+                                                                semester.courses.map((course)=>{
+                                                                    return(
+                                                                        <ListGroup.Item>
+                                                                            <Nav.Link onClick={() => setOpen(!open)} aria-expanded={open} variant="outline-primary" size="lg">{course.name}</Nav.Link>
+                                                                            <Collapse in={open}>
+                                                                                <div style={{'padding-left':'15px'}}>
+                                                                                   <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
+                                                                                        {course.description}<br/><br/>
+                                                                                        Credit: {course.credt}<br/>
+                                                                                        Result: {course.result}
+                                                                                   </div>
+                                                                                </div>
+                                                                            </Collapse>
+                                                                        </ListGroup.Item>
+                                                                    )
+                                                                })
+                                                            ):''
+                                                        }
+                                                        </ListGroup>
+                                                    </Card.Body>
+                                            </Card>
+                                        </Col>
+                                    )
+                                })
+                            ):''
+                        }
                     </Row>
                 </Container>
                 </Modal.Body>
