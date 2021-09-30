@@ -1,11 +1,15 @@
 import SetPageTitle from "../../setPageTitle";
+import Empty from "../../assets/EmptyImage.png";
+import { Image } from "react-bootstrap";
 
 export default function Experience(){
-    SetPageTitle("Experience | A.F.M. Noorullah");
+    SetPageTitle("Experience(s) | A.F.M. Noorullah");
     return(
         <div>
             <center>
-                <h1>Hello from Experience</h1>
+                <div style={{'padding-top':'50px'}}>
+                    <Image src={Empty} height="100px" width="200px" fluid></Image>
+                </div>
             </center>
         </div>
     );

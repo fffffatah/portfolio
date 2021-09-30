@@ -1,4 +1,3 @@
-import SetPageTitle from "../../setPageTitle";
 import { Container, ListGroup, Nav } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
