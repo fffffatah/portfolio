@@ -22,30 +22,24 @@ export default function Bachelor(){
 
     return(
         <div>
-            <Container>
-                <Row xs={1} md={2}>
-                    <Col>
-                        <Card>
-                            <Card.Header as="h5">Bachelor's</Card.Header>
-                            <Card.Body>
-                                <Nav.Link href="https://www.aiub.edu" target="_blank">
-                                <Card.Title>{Educations.education[0].institution}</Card.Title>
-                                </Nav.Link>
-                                <Card.Text style={{'padding-left':'15px'}}>
-                                    <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
-                                        {Educations.education[0].degree} ({Educations.education[0].year})<br/>
-                                        CGPA: {Educations.education[0].CGPA}<br/><br/>
-                                        {Educations.education[0].achievements[0].name}
-                                    </div>
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer className="card text-right">
-                                <Button variant="primary" onClick={() => handleShow()}>Details</Button>
-                            </Card.Footer>
-                        </Card>
-                    </Col>
-                </Row>
-            </Container>
+            <Card>
+                <Card.Header as="h5">Bachelor's</Card.Header>
+                    <Card.Body>
+                        <Nav.Link href="https://www.aiub.edu" target="_blank">
+                            <Card.Title>{Educations.education[0].institution}</Card.Title>
+                        </Nav.Link>
+                            <Card.Text style={{'padding-left':'15px'}}>
+                                <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
+                                    {Educations.education[0].degree} ({Educations.education[0].year})<br/>
+                                    CGPA: {Educations.education[0].CGPA}<br/><br/>
+                                    {Educations.education[0].achievements[0].name}
+                                </div>
+                            </Card.Text>
+                    </Card.Body>
+                    <Card.Footer className="card text-right">
+                        <Button variant="primary" onClick={() => handleShow()}>Details</Button>
+                    </Card.Footer>
+            </Card>
             <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header closeButton>
                 <Modal.Title>
