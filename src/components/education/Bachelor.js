@@ -7,6 +7,7 @@ import { Button } from "react-bootstrap";
 import Educations from "../../storage/education/data.json";
 import { useState } from "react";
 import { Modal } from "react-bootstrap";
+import Grade from "../../storage/downloads/GRADE.pdf";
 
 export default function Bachelor(){
     //MAIN MODAL
@@ -205,6 +206,11 @@ export default function Bachelor(){
                     </Row>
                 </Container>
                 </Modal.Body>
+                <Modal.Footer>
+                    <Nav.Link href={Grade} download>
+                        Download Grade Report
+                    </Nav.Link>
+                </Modal.Footer>
             </Modal>
         </div>
     );
