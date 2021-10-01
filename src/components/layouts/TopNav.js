@@ -10,7 +10,6 @@ import Experience from "../experience/Experience";
 import Projects from "../projects/Projects";
 import Reference from "../reference/Reference";
 import ProfileImage from "../../storage/mystory/ProfileImage.png"
-import Resume from "../../storage/downloads/RESUME.pdf";
 import { Image } from "react-bootstrap";
 
 export default function TopNav(){
@@ -47,7 +46,6 @@ export default function TopNav(){
                     <Navbar.Collapse className="justify-content-end">
                         <NavItem>
                             <NavDropdown title="Downloads" id="basic-nav-dropdown">
-                                <NavDropdown.Item href={Resume} download>Resume</NavDropdown.Item>
                             </NavDropdown>
                         </NavItem>
                     </Navbar.Collapse>
