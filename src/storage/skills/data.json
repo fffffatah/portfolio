@@ -1,0 +1,29 @@
+{
+    "skills":[
+        {
+            "title":"Programming Languages",
+            "tools":[
+                {
+                    "name":"C#",
+                    "description":""
+                },
+                {
+                    "name":"Java",
+                    "description":""
+                }
+            ]
+        },
+        {
+            "title":"Frameworks and Tools",
+            "tools":[]
+        },
+        {
+            "title":"Databases",
+            "tools":[]
+        },
+        {
+            "title":"Others",
+            "tools":[]
+        }
+    ]
+}

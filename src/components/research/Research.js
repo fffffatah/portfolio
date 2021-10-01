@@ -2,7 +2,7 @@ import SetPageTitle from "../../setPageTitle";
 import Empty from "../../assets/EmptyImage.png";
 import { Image } from "react-bootstrap";
 
-export default function Reference(){
+export default function Research(){
     SetPageTitle("Reference(s) | A.F.M. Noorullah");
     return(
         <div>

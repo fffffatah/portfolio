@@ -8,9 +8,9 @@ import Education from "../education/Education";
 import Skills from "../skills/Skills";
 import Experience from "../experience/Experience";
 import Projects from "../projects/Projects";
-import Reference from "../reference/Reference";
 import ProfileImage from "../../storage/mystory/ProfileImage.png"
 import { Image } from "react-bootstrap";
+import Research from "../research/Research";
 
 export default function TopNav(){
     return(
@@ -36,10 +36,10 @@ export default function TopNav(){
                                 <Nav.Link eventKey="link-4" as={Link} to="/education">Education</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link eventKey="link-5" as={Link} to="/experience">Experience(s)</Nav.Link>
+                                <Nav.Link eventKey="link-5" as={Link} to="/research">Research</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link eventKey="link-6" as={Link} to="/reference">Reference(s)</Nav.Link>
+                                <Nav.Link eventKey="link-6" as={Link} to="/experience">Experience(s)</Nav.Link>
                             </NavItem>
                         </Nav>
                     </Navbar.Collapse>
@@ -79,8 +79,8 @@ export default function TopNav(){
                 />
                 <Route
                     exact
-                    path="/reference"
-                    component={Reference}
+                    path="/research"
+                    component={Research}
                 />
             </Switch>
         </div>
