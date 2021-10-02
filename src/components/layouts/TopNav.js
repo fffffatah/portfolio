@@ -35,9 +35,9 @@ export default function TopNav(){
                             <NavItem>
                                 <Nav.Link eventKey="link-4" as={Link} to="/education">Education</Nav.Link>
                             </NavItem>
-                            <NavItem>
+                            {/* <NavItem>
                                 <Nav.Link eventKey="link-5" as={Link} to="/research">Research</Nav.Link>
-                            </NavItem>
+                            </NavItem> */}
                             <NavItem>
                                 <Nav.Link eventKey="link-6" as={Link} to="/experience">Experience(s)</Nav.Link>
                             </NavItem>
