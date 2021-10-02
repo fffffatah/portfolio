@@ -10,20 +10,96 @@
                 {
                     "name":"Java",
                     "description":""
+                },
+                {
+                    "name":"PHP",
+                    "description":""
+                },
+                {
+                    "name":"JavaScript",
+                    "description":""
+                },
+                {
+                    "name":"Shell Script",
+                    "description":""
+                },
+                {
+                    "name":"C/C++",
+                    "description":""
+                },
+                {
+                    "name":"Python",
+                    "description":""
                 }
             ]
         },
         {
-            "title":"Frameworks and Tools",
-            "tools":[]
+            "title":"Frameworks and Libraries",
+            "tools":[
+                {
+                    "name":".NET",
+                    "description":""
+                },
+                {
+                    "name":"Laravel",
+                    "description":""
+                },
+                {
+                    "name":"NodeJS",
+                    "description":""
+                },
+                {
+                    "name":"ReactJS",
+                    "description":""
+                }
+            ]
         },
         {
             "title":"Databases",
-            "tools":[]
+            "tools":[
+                {
+                    "name":"MongoDB",
+                    "description":""
+                },
+                {
+                    "name":"MySQL",
+                    "description":""
+                },
+                {
+                    "name":"PostgreSQL",
+                    "description":""
+                }
+            ]
         },
         {
-            "title":"Others",
-            "tools":[]
+            "title":"Tools",
+            "tools":[
+                {
+                    "name":"Git",
+                    "description":""
+                },
+                {
+                    "name":"Docker",
+                    "description":""
+                },
+                {
+                    "name":"Linux",
+                    "description":""
+                }
+            ]
+        },
+        {
+            "title":"Cloud Computing",
+            "tools":[
+                {
+                    "name":"Microsoft Azure",
+                    "description":""
+                },
+                {
+                    "name":"AWS",
+                    "description":""
+                }
+            ]
         }
     ]
 }
