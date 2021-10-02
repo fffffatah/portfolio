@@ -16,7 +16,7 @@ export default function Projects(){
     return(
         <div style={{'padding-top':'30px'}}>
             <Container>
-                <Row xs={1} md={3}>
+                <Row xs={1} md={2}>
                     {
                         MyProjects.projects.length?(
                             MyProjects.projects.map((project)=>{
