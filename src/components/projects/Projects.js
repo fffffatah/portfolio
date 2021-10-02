@@ -14,7 +14,7 @@ export default function Projects(){
     const [show, setShow] = useState(false);
     const [open, setOpen] = useState(false);
     return(
-        <div style={{'padding-top':'50px'}}>
+        <div style={{'padding-top':'30px'}}>
             <Container>
                 <Row xs={1} md={3}>
                     {
@@ -22,6 +22,7 @@ export default function Projects(){
                             MyProjects.projects.map((project)=>{
                                 return(
                                         <Col>
+                                        <div style={{'padding-top':'20px'}}>
                                             <Card>
                                                 <Nav.Link><Card.Header onClick={() => setOpen(!open)} aria-expanded={open} as="h5"><div style={{'font-family':'Segoe UI'},{'color':'#3B8CF5'}}><b>{project.title}</b></div></Card.Header></Nav.Link>
                                                 <Collapse in={open}>
@@ -35,6 +36,7 @@ export default function Projects(){
                                                     </Card.Body>
                                                 </Collapse>
                                             </Card>
+                                        </div>
                                         </Col>
                                 )
                             })
