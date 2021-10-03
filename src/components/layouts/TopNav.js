@@ -11,11 +11,12 @@ import Projects from "../projects/Projects";
 import ProfileImage from "../../assets/ProfileImage.png"
 import { Image } from "react-bootstrap";
 import Research from "../research/Research";
+import BottomNav from "./BottomNav";
 
 export default function TopNav(){
     return(
         <BrowserRouter>
-        <div>
+        <div style={{"min-height": "calc(100vh - 125px)"}}>
             <Navbar collapseOnSelect="true" expand="lg" bg="light" variant="light">
                 <Container>
                     <Navbar.Brand href="/"><Image src={ProfileImage} height="120px" width="120px"/></Navbar.Brand>
@@ -84,6 +85,7 @@ export default function TopNav(){
                 />
             </Switch>
         </div>
+        <BottomNav/>
         </BrowserRouter>
     );
 }
