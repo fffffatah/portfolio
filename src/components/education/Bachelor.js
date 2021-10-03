@@ -11,7 +11,6 @@ import Grade from "../../storage/downloads/GRADE.pdf";
 
 export default function Bachelor(){
     //MAIN MODAL
-    const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
     const [open, setOpen] = useState(false);
 
@@ -39,7 +38,7 @@ export default function Bachelor(){
                         <Button variant="primary" onClick={() => handleShow()}>Details</Button>
                     </Card.Footer>
             </Card>
-            <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+            <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
                 <Modal.Header closeButton>
                 <Modal.Title>
                     Courses

@@ -1,5 +1,5 @@
 import SetPageTitle from "../../setPageTitle";
-import { Container, Nav } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import Bachelor from "./Bachelor";
