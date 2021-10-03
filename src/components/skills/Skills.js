@@ -9,7 +9,6 @@ import { Nav } from "react-bootstrap";
 
 export default function Skills(){
     SetPageTitle("Skills | A.F.M. Noorullah");
-    const [show, setShow] = useState(false);
     const [open, setOpen] = useState(false);
 
     return(

@@ -11,7 +11,6 @@ import MyProjects from "../../storage/projects/data.json"
 
 export default function Projects(){
     SetPageTitle("Projects | A.F.M. Noorullah");
-    const [show, setShow] = useState(false);
     const [open, setOpen] = useState(false);
     return(
         <div style={{'padding-top':'30px'}}>
