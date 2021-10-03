@@ -8,7 +8,7 @@ import Education from "../education/Education";
 import Skills from "../skills/Skills";
 import Experience from "../experience/Experience";
 import Projects from "../projects/Projects";
-import ProfileImage from "../../storage/mystory/ProfileImage.png"
+import ProfileImage from "../../assets/ProfileImage.png"
 import { Image } from "react-bootstrap";
 import Research from "../research/Research";
 
