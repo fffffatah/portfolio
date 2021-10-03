@@ -8,8 +8,15 @@ import { Col } from "react-bootstrap";
 import { Image } from "react-bootstrap";
 import { NavItem } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { useState } from "react";
+import { Modal } from "react-bootstrap";
+
 
 export default function BottomNav(){
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     return(
         <footer style={{"position":"relative"},{"padding-top":"25px"}}>
             <Navbar expand="lg" variant="light" bg="light">
@@ -25,11 +32,25 @@ export default function BottomNav(){
                         <Nav.Link href="mailto: ab.fatahmn@hotmail.com"><Image src={Email} height="25px" width="25px" fluid/> ab.fatahmn@hotmail.com</Nav.Link>
                     </NavItem>
                     <NavItem style={{"padding-left":"60px"}}>
-                        <Button>Contact Directly</Button>
+                        <Button onClick={handleShow}>Contact Directly</Button>
                     </NavItem>
                 </div>
             </Container>
             </Navbar>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                <Modal.Title>Contact</Modal.Title>
+                </Modal.Header>
+                <Modal.Body></Modal.Body>
+                <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                    Close
+                </Button>
+                <Button variant="primary" onClick={handleClose}>
+                    Send
+                </Button>
+                </Modal.Footer>
+            </Modal>
         </footer>
     );
 }
