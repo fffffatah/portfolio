@@ -31,26 +31,9 @@ export default function BottomNav(){
                     <NavItem>
                         <Nav.Link href="mailto: ab.fatahmn@hotmail.com"><Image src={Email} height="25px" width="25px" fluid/> ab.fatahmn@hotmail.com</Nav.Link>
                     </NavItem>
-                    <NavItem style={{"padding-left":"60px"}}>
-                        <Button onClick={handleShow}>Contact Directly</Button>
-                    </NavItem>
                 </div>
             </Container>
             </Navbar>
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                <Modal.Title>Contact</Modal.Title>
-                </Modal.Header>
-                <Modal.Body></Modal.Body>
-                <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Send
-                </Button>
-                </Modal.Footer>
-            </Modal>
         </footer>
     );
 }
