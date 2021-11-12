@@ -41,7 +41,7 @@ export default function Bachelor(){
             <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
                 <Modal.Header closeButton>
                 <Modal.Title>
-                    Courses
+                    Courses (Total Credits: {Educations.education[0].credits})
                 </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
