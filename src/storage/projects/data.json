@@ -6,6 +6,11 @@
             "source":"https://github.com/fffffatah/ShantyWebAPI"
         },
         {
+            "title":"Quickly API",
+            "description":"Built a project management tool with multiple user and permission support.",
+            "source":"https://github.com/fffffatah/Quickly"
+        },
+        {
             "title":"Heimdall - Home Media System",
             "description":"Built a home media system that can be deployed on Raspberry Pi. It includes Docker scripts which can be used to deploy the system in a Docker Container. * Built with Laravel, Bootstrap5, SQLite.",
             "source":"https://github.com/fffffatah/Heimdall-Home-Media-System"

@@ -4,8 +4,8 @@
             "institution":"American International University-Bangladesh",
             "degree":"BSc in Computer Information System",
             "year":"2018 - Current",
-            "CGPA":"4",
-            "credits":"111/129",
+            "CGPA":"3.99",
+            "credits":"126/129",
             "achievements":[
                 {
                     "name":" Dean’s List Honors (Spring 2018-2019 Semester)"
@@ -287,42 +287,42 @@
                     ]
                 },
                 {
-                    "session":"2021 - 2022, Fall (Current)",
+                    "session":"2021 - 2022, Fall",
                     "courses":[
                         {
                             "name":"Advanced Programming With .NET",
                             "credt":"3",
                             "description":"",
-                            "result":""
+                            "result":"A+ (99%)"
                         },
                         {
                             "name":"Multimedia Systems",
                             "credt":"3",
                             "description":"",
-                            "result":""
+                            "result":"A+ (95.06%)"
                         },
                         {
                             "name":"Software Development Project Management",
                             "credt":"3",
                             "description":"",
-                            "result":""
+                            "result":"A+ (92%)"
                         },
                         {
                             "name":"Software Requirement Engineering",
                             "credt":"3",
                             "description":"",
-                            "result":""
+                            "result":"A (85%)"
                         },
                         {
                             "name":"Advanced Computer Networks",
                             "credt":"3",
                             "description":"",
-                            "result":""
+                            "result":"A+ (94%)"
                         }
                     ]
                 },
                 {
-                    "session":"2021 - 2022, Spring",
+                    "session":"2021 - 2022, Spring (Current)",
                     "courses":[
                         {
                             "name":"Internship",
