@@ -39,9 +39,9 @@ export default function TopNav(){
                             {/* <NavItem>
                                 <Nav.Link eventKey="link-5" as={Link} to="/research">Research</Nav.Link>
                             </NavItem> */}
-                            {/* <NavItem>
-                                <Nav.Link eventKey="link-6" as={Link} to="/experience">Experience(s)</Nav.Link>
-                            </NavItem> */}
+                            <NavItem>
+                                <Nav.Link eventKey="link-6" as={Link} to="/experience">Experience</Nav.Link>
+                            </NavItem>
                         </Nav>
                     </Navbar.Collapse>
                     <Navbar.Collapse className="justify-content-end">
