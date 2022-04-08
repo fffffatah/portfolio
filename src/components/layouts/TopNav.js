@@ -25,7 +25,7 @@ export default function TopNav(){
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav variant="tabs" defaultActiveKey="/" className="me-auto">
                             <NavItem>
-                                <Nav.Link eventKey="link-1" as={Link} to="/">My Story</Nav.Link>
+                                <Nav.Link eventKey="link-1" as={Link} to="/">About</Nav.Link>
                             </NavItem>
                             <NavItem>
                                 <Nav.Link eventKey="link-2" as={Link} to="/projects">Projects</Nav.Link>
