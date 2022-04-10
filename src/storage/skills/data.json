@@ -58,6 +58,10 @@
             "title":"Databases",
             "tools":[
                 {
+                    "name":"Cosmos DB",
+                    "description":""
+                },
+                {
                     "name":"MongoDB",
                     "description":""
                 },
@@ -79,6 +83,10 @@
                     "description":""
                 },
                 {
+                    "name":"Azure DevOps",
+                    "description":""
+                },
+                {
                     "name":"Docker",
                     "description":""
                 },
@@ -93,10 +101,6 @@
             "tools":[
                 {
                     "name":"Microsoft Azure",
-                    "description":""
-                },
-                {
-                    "name":"AWS",
                     "description":""
                 }
             ]
