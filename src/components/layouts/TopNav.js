@@ -28,20 +28,20 @@ export default function TopNav(){
                                 <Nav.Link eventKey="link-1" as={Link} to="/">About</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link eventKey="link-2" as={Link} to="/projects">Projects</Nav.Link>
+                                <Nav.Link eventKey="link-6" as={Link} to="/experience">Experience</Nav.Link>
+                            </NavItem>
+                            <NavItem>
+                                <Nav.Link eventKey="link-4" as={Link} to="/education">Education</Nav.Link>
                             </NavItem>
                             <NavItem>
                                 <Nav.Link eventKey="link-3" as={Link} to="/skills">Skills</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link eventKey="link-4" as={Link} to="/education">Education</Nav.Link>
+                                <Nav.Link eventKey="link-2" as={Link} to="/projects">Projects</Nav.Link>
                             </NavItem>
                             {/* <NavItem>
                                 <Nav.Link eventKey="link-5" as={Link} to="/research">Research</Nav.Link>
                             </NavItem> */}
-                            <NavItem>
-                                <Nav.Link eventKey="link-6" as={Link} to="/experience">Experience</Nav.Link>
-                            </NavItem>
                         </Nav>
                     </Navbar.Collapse>
                     <Navbar.Collapse className="justify-content-end">

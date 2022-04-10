@@ -6,7 +6,7 @@ import { Image } from "react-bootstrap";
 import Stories from "../../storage/mystory/data.json";
 
 export default function MyStory(){
-    SetPageTitle("My Story | A.F.M. Noorullah");
+    SetPageTitle("About | A.F.M. Noorullah");
     return(
         <div>
             <Container>
