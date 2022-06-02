@@ -1,8 +1,15 @@
 {
     "experience":[
         {
+            "designation":"Associate Software Engineer",
+            "technologies":".NET, Microsoft Azure",
+            "details":"",
+            "organization":"Brain Station 23 Ltd.",
+            "duration":"June, 2022 - Current"
+        },
+        {
             "designation":"Software Engineer Intern",
-            "technologies":".NET",
+            "technologies":".NET, Microsoft Azure",
             "details":"",
             "organization":"Brain Station 23 Ltd.",
             "duration":"February, 2022 - May, 2022"
