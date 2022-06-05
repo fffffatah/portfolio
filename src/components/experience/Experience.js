@@ -9,21 +9,29 @@ export default function Experience(){
             <div style={{'padding-top':'50px'}}>
                 <Container>
                     <Row xs={1} md={2}>
-                        <Col>
-                            <Card>
-                                <Card.Header as="h5">{Exps.experience[0].designation}</Card.Header>
-                                    <Card.Body>
-                                        <Nav.Link href="https://brainstation-23.com/?bs" target="_blank">
-                                            <Card.Title>{Exps.experience[0].organization}</Card.Title>
-                                        </Nav.Link>
-                                            <Card.Text style={{'padding-left':'15px'}}>
-                                                <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
-                                                    {Exps.experience[0].duration}
-                                                </div>
-                                            </Card.Text>
-                                    </Card.Body>
-                            </Card>
-                        </Col>
+                        {
+                            Exps.experience.length?(
+                                Exps.experience.map((experience)=>{
+                                    return(
+                                        <Col>
+                                            <Card>
+                                                <Card.Header as="h5">{experience.designation}</Card.Header>
+                                                <Card.Body>
+                                                    <Nav.Link href="https://brainstation-23.com/?bs" target="_blank">
+                                                <Card.Title>{experience.organization}</Card.Title>
+                                                </Nav.Link>
+                                                <Card.Text style={{'padding-left':'15px'}}>
+                                                    <div style={{'font-family':'Segoe UI'},{'color':'grey'}}>
+                                                        {experience.duration}
+                                                    </div>
+                                                </Card.Text>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
+                                    )
+                                })
+                            ):''
+                        }
                     </Row>
                 </Container>
             </div>
